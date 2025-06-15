@@ -1,0 +1,10 @@
+#incorrect-regex : regex based problem statement
+import re
+T = int(input())
+for check in range(T):
+    pattern = input()
+    try:
+        re.compile(pattern)   
+        print("True")
+    except re.error:
+        print("False")
